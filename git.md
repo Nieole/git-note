@@ -133,6 +133,15 @@ git branch --set-upstream <branch> <origin/branch>
 git remote add origin <url> #为当前项目添加名为origin的远程仓库地址
 git push -u origin master #把本地库的所有内容推送到远程库上
 ```
+* 提交本地commit到远程仓库
+```shell
+git push #推送到远程，未指定远程仓库名称则默认为origin
+```
+* 从远程仓库获取更新
+```shell
+git pull <branch> #获取远程仓库指定branch的更新(未指定则获取当前分支的更新)并自动merge
+git fetch <branch> #同上，但不会自动merge
+```
 
 [配置git排除文件方式](#5)
 ----------
